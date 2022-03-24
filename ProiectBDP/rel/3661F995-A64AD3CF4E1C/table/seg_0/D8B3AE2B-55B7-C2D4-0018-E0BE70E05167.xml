@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8B3AE2B-55B7-C2D4-0018-E0BE70E05167" name="Medicament">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>B391B4F7-D8A7-6692-F542-89DC45F5B402</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Denumire_comerciala" id="5D99DAF1-771C-FD0E-415F-ED50DAB2E4A2">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>A437DC84-FE38-2F00-1F42-19AFBB243728</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_medicament" id="6C5DDFC9-2A19-B6B5-B02C-AA534A9ED48E">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>25FD388A-1A40-6415-A0A0-5FE55AD18FE0</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Diagnostic_Cod_diagnostic" id="4E4EF87E-278B-4476-5168-A37591F2E0AB">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>340510A1-17D5-CA40-4BA4-BB5216517E4F</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0020C1F-1A8E-67E2-7346-5B0AE9F3357B" referredColumn="7A6A6892-5346-6F8C-9DCD-4E00888551FD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C991B5C-9627-C04F-7850-76EE6080A56E" name="Medicament_PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>5CBC9F57-05FD-0A20-A8AE-65EE1713BE22</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C5DDFC9-2A19-B6B5-B02C-AA534A9ED48E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3873B2AE-7D35-B0A9-8D54-37FD4BC042AC" name="Medicament_Diagnostic_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>8A917AB5-60FA-6B7F-D386-58DDE8B041EF</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E4EF87E-278B-4476-5168-A37591F2E0AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

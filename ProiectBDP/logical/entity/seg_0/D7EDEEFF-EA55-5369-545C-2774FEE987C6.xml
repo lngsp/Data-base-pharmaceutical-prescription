@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7EDEEFF-EA55-5369-545C-2774FEE987C6" name="Diagnostic">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 14:12:19 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cod_diagnostic" id="5562A828-908E-765C-F072-B892F62985CD">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 14:12:25 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tip_diagnostic" id="83BAB4AB-F2E5-CE94-8E10-73BCFAFEA6D8">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 14:12:52 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<constraintName>tip_diagnostic_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Acut"/>
+<valueDef value="C" description="Cronic"/>
+<valueDef value="S" description="Subacut"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C27C4194-D7B7-0346-6E28-DDDB91EBEC5C" name="Diagnostic PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 14:12:43 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5562A828-908E-765C-F072-B892F62985CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

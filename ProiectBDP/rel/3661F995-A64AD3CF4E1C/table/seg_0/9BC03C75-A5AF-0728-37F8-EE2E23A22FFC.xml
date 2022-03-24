@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BC03C75-A5AF-0728-37F8-EE2E23A22FFC" name="Pacient">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>22302C61-8C01-617B-4957-795EDB00DA8F</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nume" id="61356D8A-BAAF-8C49-1677-0F1213ED2DE2">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>626B6B4D-A28F-E124-2F6B-A045DD33081E</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prenume" id="5F52C7DD-1BB3-97F0-2181-536914E434A3">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>B0356642-3F09-5F9F-CC0B-8D4619AB3280</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNP" id="C81E02F5-D702-4014-39C8-D9033DC56D29">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>919BA615-835C-7FD3-1500-8BBE9C1D4596</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF4DE631-FE27-790F-1FDF-02A032FCB205" name="Pacient_PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>85AC66FA-D10D-238E-57E5-DF6DF4842958</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C81E02F5-D702-4014-39C8-D9033DC56D29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

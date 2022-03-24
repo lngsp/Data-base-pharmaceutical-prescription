@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89C7E49D-A338-6C0A-1681-8B4B67968A46" name="Detalii_Reteta">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:51:36 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Denumire_comuna" id="9630BBD0-0D61-5C6A-4222-21CABBFDD48C">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-02 12:59:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[DCI = denumirea comună internationala (denumire substanta activa)]]></commentInRDBMS>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Forma_farmaceutica" id="F5DDE4FC-0CF1-D335-D968-1F82D44112D2">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:51:45 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<constraintName>form_farm_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="CAPS" description="Capsule"/>
+<valueDef value="COMPR" description="Comprimate"/>
+<valueDef value="COMPR_FILM" description="Comprimate filmate"/>
+<valueDef value="SOL_INJ" description="Solutie injectabila"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Concentratie" id="5A304A41-776B-CF59-13E0-BD0700BC44BB">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:51:45 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Doza_zilnica" id="0C398ABC-108F-9670-A86D-3DFF2CEB53B3">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:51:45 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantitate" id="2A04D3CD-6C41-CA23-54B9-906638616CDC">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:51:45 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<constraintName>cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 1
+"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_zile_tratament" id="5C3E346E-F0F9-DDCB-A5D6-5A2AB37ADDD6">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:51:45 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<constraintName>nrzile_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Nr_zile_tratament &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PretRF" id="9527F300-4763-1093-62C3-FD54E3B92FD7">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:51:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Procentul de compensare]]></commentInRDBMS>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_medicament" id="3C1333CC-2D72-08E7-F1B5-2F39F4E46946">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-16 11:20:20 UTC</createdTime>
+<generatorID>BB1C0214-A668-DC26-7ED9-B8CB3D157425</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<referedAttribute>25FD388A-1A40-6415-A0A0-5FE55AD18FE0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Serie" id="B1252AC1-F6DF-D772-183E-AB9CE7DFAA07">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-16 11:21:02 UTC</createdTime>
+<generatorID>6A7D9413-0DF9-A4C2-AF97-F67650478ED6</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<referedAttribute>3BCDC996-5A0B-4C0A-AF11-EA4DDC73F4B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numar" id="240DF3A2-BE73-E948-275C-A96394CB19D9">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-16 11:21:04 UTC</createdTime>
+<generatorID>6A7D9413-0DF9-A4C2-AF97-F67650478ED6</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<referedAttribute>C4D23D94-4C14-285B-D10F-543945DCD9F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A282E640-66C6-4BC2-EC72-CC18526B7A6E" name="Detalii_Reteta PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:53:09 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>6A7D9413-0DF9-A4C2-AF97-F67650478ED6,CB58A88B-F7D7-1177-FB3F-9103FA85ACC4</newElementsIDs>
+</identifier>
+</identifiers>
+</Entity>

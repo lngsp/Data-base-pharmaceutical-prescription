@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ProiectBDP" id="53E903CC-65BF-AECB-F6A3-215EBED98D9E" version="3.5">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:27:46 UTC</createdTime>
+<ownerDesignName>ProiectSapt2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>53E903CC-65BF-AECB-F6A3-215EBED98D9E</designId>
+</OSDM_Design>

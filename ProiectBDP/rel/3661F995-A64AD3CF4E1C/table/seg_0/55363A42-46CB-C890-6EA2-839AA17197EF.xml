@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55363A42-46CB-C890-6EA2-839AA17197EF" name="Info_pacient">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>1D614463-0151-69E6-30AE-AC6A4C5B775F</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Data_nasterii" id="8F139F92-2C6B-E2B6-A918-A48A1B2C7E18">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>EF22F1AF-1CC1-33FD-6F4D-6EB684BB8EDE</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sexul" id="A27D47AF-BBB9-86C1-5A07-0F05162464AA">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>4A5017A7-691F-D172-A413-481598859157</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<constraintName>sexul_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Feminim"/>
+<valueDef value="M" description="Masculin"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cetatenia" id="D4BD6D80-72D2-D03F-13B4-75AAB319E943">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>BE99D794-C34D-0026-751E-F888D2D6288D</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<constraintName>cetatenia_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="PO" description="Polonia"/>
+<valueDef value="RO" description="Romania"/>
+<valueDef value="US" description="United States"/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Categorie_pacient" id="5C09579E-1005-402A-3060-01B2D647B7AA">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>3F65F75A-27BF-8DE7-397B-CA087322910D</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<constraintName>categorie_pc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="AJ" description="Ajutor social"/>
+<valueDef value="ES" description="Elev/student"/>
+<valueDef value="H" description="Handicap"/>
+<valueDef value="LP" description="Liber profesionist"/>
+<valueDef value="P" description="Pensionar"/>
+<valueDef value="SAL" description="Salariat"/>
+<valueDef value="VET" description="Veteran"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pacient_CNP" id="15A5867A-7C14-E6C7-8E08-AD7E3DBF6E7B">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>A889C3BB-BFA3-9C02-6030-B595979E7DEB</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C0F7E3C-89A7-9E12-A3B4-8F52ADB68CD1" referredColumn="C81E02F5-D702-4014-39C8-D9033DC56D29"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BF5E2D7-2454-48F2-62DE-43BEACD9C10D" name="Info_pacient__IDX">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0AC1B847-F2A3-E5A7-8E82-D42C27A2B735</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="15A5867A-7C14-E6C7-8E08-AD7E3DBF6E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7F125E5-F5CD-D441-F562-D703CCE3C76F" name="Info_pacient_Pacient_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>0AC1B847-F2A3-E5A7-8E82-D42C27A2B735</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15A5867A-7C14-E6C7-8E08-AD7E3DBF6E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

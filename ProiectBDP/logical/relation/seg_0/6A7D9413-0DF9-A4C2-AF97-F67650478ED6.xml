@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contine" directorySegmentName="seg_0" id="6A7D9413-0DF9-A4C2-AF97-F67650478ED6">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:53:09 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<sourcePk>C659C574-DF19-7D93-0BE1-758D5A6CE9A1</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>conține</nameOnSource>
+<nameOnTarget>mai multe</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E2316F45-0B9F-2FD0-4B3F-71AB49E5995E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>89C7E49D-A338-6C0A-1681-8B4B67968A46</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

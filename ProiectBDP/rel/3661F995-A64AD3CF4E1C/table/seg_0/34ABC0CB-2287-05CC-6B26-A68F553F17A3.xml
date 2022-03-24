@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34ABC0CB-2287-05CC-6B26-A68F553F17A3" name="Reteta">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>E2316F45-0B9F-2FD0-4B3F-71AB49E5995E</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Serie" id="267D1D72-1806-3417-3BA0-BE9211CCA99D">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>3BCDC996-5A0B-4C0A-AF11-EA4DDC73F4B4</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numar" id="20C30C13-E3ED-A352-673B-9734CCB52136">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>C4D23D94-4C14-285B-D10F-543945DCD9F5</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_prescrierii" id="F3E4D1D5-0609-FAD4-3D23-7BB132CA3667">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>969BF731-7D21-2EA6-97A0-80B125AEDC71</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Unitate_medicala_CUI" id="C763958B-62FC-8E8E-FE82-366452864D8F">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>1C03E850-4E22-2A4A-9C49-964DC53AD773</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71312237-06C1-67C0-E2F8-2E266FE8A821" referredColumn="8F720F8B-4074-0875-3997-8B94782F7594"/>
+</associations>
+</Column>
+<Column name="Pacient_CNP" id="72BB5D46-5B87-021E-3E30-0385299907EB">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>EB9E34C8-B217-F42C-E283-762468F80747</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4621C51-64EB-5A31-41BA-474EF69E77D7" referredColumn="C81E02F5-D702-4014-39C8-D9033DC56D29"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E363C43A-96D6-4AD6-6B9A-B2D1E3DDAF33" name="Reteta_PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>C659C574-DF19-7D93-0BE1-758D5A6CE9A1</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="267D1D72-1806-3417-3BA0-BE9211CCA99D"/>
+<colUsage columnID="20C30C13-E3ED-A352-673B-9734CCB52136"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CB7C651-E5D5-B52D-1458-BAAF083CCC09" name="Reteta_Unitate_medicala_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>822E2747-E939-9C32-11C1-96AF442D7436</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C763958B-62FC-8E8E-FE82-366452864D8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="494CEB37-71EE-3FD4-5C48-2572ED0767EE" name="Reteta_Pacient_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>1F1AA632-ECF5-3BA8-8D70-9E7834D7B7BA</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72BB5D46-5B87-021E-3E30-0385299907EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

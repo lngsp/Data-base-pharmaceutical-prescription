@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="primeste" directorySegmentName="seg_0" id="1F1AA632-ECF5-3BA8-8D70-9E7834D7B7BA">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:03:15 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<sourcePk>85AC66FA-D10D-238E-57E5-DF6DF4842958</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>deține</nameOnSource>
+<nameOnTarget>mai multe</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>22302C61-8C01-617B-4957-795EDB00DA8F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E2316F45-0B9F-2FD0-4B3F-71AB49E5995E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

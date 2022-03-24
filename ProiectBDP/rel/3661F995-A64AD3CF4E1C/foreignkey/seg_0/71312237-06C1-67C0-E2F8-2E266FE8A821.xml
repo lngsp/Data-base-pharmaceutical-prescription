@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="71312237-06C1-67C0-E2F8-2E266FE8A821" containerWithKeyObject="34ABC0CB-2287-05CC-6B26-A68F553F17A3" localFKIndex="8CB7C651-E5D5-B52D-1458-BAAF083CCC09" name="Reteta_Unitate_medicala_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>822E2747-E939-9C32-11C1-96AF442D7436</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<referredTableLongName>Unitate_medicala</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>527D20F1-D76C-DA20-96D0-AC9A2C33AF54</referredTableID>
+<keyObject>B41055A7-8597-F94A-3A2D-D131583E88A2</keyObject>
+<referredKeyID>B41055A7-8597-F94A-3A2D-D131583E88A2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CUI</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62A13B17-AEB1-F143-52A9-2D1F6B783ED5" name="Detalii_Reteta">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>89C7E49D-A338-6C0A-1681-8B4B67968A46</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Denumire_comuna" id="A39C1BF3-29A7-D26F-C770-7B78C9808839">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[DCI = denumirea comună internationala (denumire substanta activa)]]></commentInRDBMS>
+<generatorID>9630BBD0-0D61-5C6A-4222-21CABBFDD48C</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Forma_farmaceutica" id="DA2AA833-A56D-0B76-A69A-F1F2415F6C6F">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>F5DDE4FC-0CF1-D335-D968-1F82D44112D2</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<constraintName>form_farm_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="CAPS" description="Capsule"/>
+<valueDef value="COMPR" description="Comprimate"/>
+<valueDef value="COMPR_FILM" description="Comprimate filmate"/>
+<valueDef value="SOL_INJ" description="Solutie injectabila"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Concentratie" id="1421E1B2-99BD-ED38-8EE7-7B4872D047B8">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>5A304A41-776B-CF59-13E0-BD0700BC44BB</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Doza_zilnica" id="E47DF816-2A9C-5291-E18D-2141DC754CFB">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>0C398ABC-108F-9670-A86D-3DFF2CEB53B3</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantitate" id="53E73EE1-047D-8807-E6C8-2E628454823B">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>2A04D3CD-6C41-CA23-54B9-906638616CDC</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<constraintName>cantitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 1
+"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_zile_tratament" id="748DE68A-AF87-1A1E-4F6F-2A40169F85B6">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>5C3E346E-F0F9-DDCB-A5D6-5A2AB37ADDD6</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<constraintName>nrzile_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Nr_zile_tratament &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PretRF" id="D0898DFD-1500-4095-2F6F-F532648D15D6">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Procentul de compensare]]></commentInRDBMS>
+<generatorID>9527F300-4763-1093-62C3-FD54E3B92FD7</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Medicament_id_medicament" id="BA8E3076-8002-0793-4B58-9C7ADBC14AA3">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>3C1333CC-2D72-08E7-F1B5-2F39F4E46946</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55AA16B7-AEF1-190A-5FE0-1DC98690D255" referredColumn="6C5DDFC9-2A19-B6B5-B02C-AA534A9ED48E"/>
+</associations>
+</Column>
+<Column name="Reteta_Serie" id="8BE61B78-755A-9305-6F1C-1179FF843CD4">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>B1252AC1-F6DF-D772-183E-AB9CE7DFAA07</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE33DD56-B0C2-3C07-2D5A-8399E532A89F" referredColumn="267D1D72-1806-3417-3BA0-BE9211CCA99D"/>
+</associations>
+</Column>
+<Column name="Reteta_Numar" id="4B10686E-367F-1D2F-6C15-2A94E5876250">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>240DF3A2-BE73-E948-275C-A96394CB19D9</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE33DD56-B0C2-3C07-2D5A-8399E532A89F" referredColumn="20C30C13-E3ED-A352-673B-9734CCB52136"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84D210A7-5A10-356C-C838-7B7ED44BCB3F" name="Detalii_Reteta_PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>A282E640-66C6-4BC2-EC72-CC18526B7A6E</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="F4075FEF-859E-0B16-49BF-0FE3CC757022" name="Detalii_Reteta_Reteta_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>6A7D9413-0DF9-A4C2-AF97-F67650478ED6</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BE61B78-755A-9305-6F1C-1179FF843CD4"/>
+<colUsage columnID="4B10686E-367F-1D2F-6C15-2A94E5876250"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC87F9FC-8D89-4FE3-B8D1-02050A4682A6" name="Detalii_Reteta_Medicament_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>BB1C0214-A668-DC26-7ED9-B8CB3D157425</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA8E3076-8002-0793-4B58-9C7ADBC14AA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

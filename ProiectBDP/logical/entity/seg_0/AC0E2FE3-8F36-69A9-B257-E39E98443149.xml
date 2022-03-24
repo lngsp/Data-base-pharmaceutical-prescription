@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC0E2FE3-8F36-69A9-B257-E39E98443149" name="Unitate_medicala">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:28:07 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Denumire" id="695A47DE-6BC3-BCEA-AB49-613F3343FB20">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:28:25 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresa" id="DA760D39-747F-4ABC-0DCC-0EE9B3883129">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:29:35 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUI" id="94468328-2E2F-4B55-42B6-CE05584B647F">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:30:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[CUI = Cheie unica de inregistrare]]></commentInRDBMS>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tip_unitate" id="0F19827F-E725-E883-66B9-8B11381C70EB">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:31:30 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<constraintName>tip_unitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="ALT" description="Altele"/>
+<valueDef value="AMB" description="Ambulatoriu"/>
+<valueDef value="MF" description="MedicFamilia"/>
+<valueDef value="MM" description="MedicinaMuncii"/>
+<valueDef value="SP" description="Spital"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefon" id="7C6EAC74-C485-47A5-DC3D-89B0C8BD69A9">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:34:10 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email_medic" id="807FB360-00FF-0AE9-C064-306A109EFE44">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:34:49 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C81C182-889D-34F2-D003-0960D3092461" name="Unitate_medicala PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-04 13:38:19 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>94468328-2E2F-4B55-42B6-CE05584B647F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

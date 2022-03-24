@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="55AA16B7-AEF1-190A-5FE0-1DC98690D255" containerWithKeyObject="62A13B17-AEB1-F143-52A9-2D1F6B783ED5" localFKIndex="FC87F9FC-8D89-4FE3-B8D1-02050A4682A6" name="Detalii_Reteta_Medicament_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>BB1C0214-A668-DC26-7ED9-B8CB3D157425</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<referredTableLongName>Medicament</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D8B3AE2B-55B7-C2D4-0018-E0BE70E05167</referredTableID>
+<keyObject>0C991B5C-9627-C04F-7850-76EE6080A56E</keyObject>
+<referredKeyID>0C991B5C-9627-C04F-7850-76EE6080A56E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_medicament</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

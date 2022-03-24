@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BE33DD56-B0C2-3C07-2D5A-8399E532A89F" containerWithKeyObject="62A13B17-AEB1-F143-52A9-2D1F6B783ED5" localFKIndex="F4075FEF-859E-0B16-49BF-0FE3CC757022" name="Detalii_Reteta_Reteta_FK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>6A7D9413-0DF9-A4C2-AF97-F67650478ED6</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<referredTableLongName>Reteta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>34ABC0CB-2287-05CC-6B26-A68F553F17A3</referredTableID>
+<keyObject>E363C43A-96D6-4AD6-6B9A-B2D1E3DDAF33</keyObject>
+<referredKeyID>E363C43A-96D6-4AD6-6B9A-B2D1E3DDAF33</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Serie,Numar</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

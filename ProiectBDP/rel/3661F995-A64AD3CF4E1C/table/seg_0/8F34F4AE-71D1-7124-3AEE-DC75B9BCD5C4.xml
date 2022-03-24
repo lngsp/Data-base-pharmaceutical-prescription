@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F34F4AE-71D1-7124-3AEE-DC75B9BCD5C4" name="Diagnostic">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>D7EDEEFF-EA55-5369-545C-2774FEE987C6</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cod_diagnostic" id="7A6A6892-5346-6F8C-9DCD-4E00888551FD">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>5562A828-908E-765C-F072-B892F62985CD</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tip_diagnostic" id="51E40B73-CB66-9E0D-F6C4-2FE893D912DD">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>83BAB4AB-F2E5-CE94-8E10-73BCFAFEA6D8</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<constraintName>tip_diagnostic_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Acut"/>
+<valueDef value="C" description="Cronic"/>
+<valueDef value="S" description="Subacut"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49BCFAC9-1D68-B775-657E-E759DAC32F4F" name="Diagnostic_PK">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-12-23 11:22:42 UTC</createdTime>
+<generatorID>C27C4194-D7B7-0346-6E28-DDDB91EBEC5C</generatorID>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A6A6892-5346-6F8C-9DCD-4E00888551FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

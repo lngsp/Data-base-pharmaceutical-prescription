@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="elibereaza un" directorySegmentName="seg_0" id="BB1C0214-A668-DC26-7ED9-B8CB3D157425">
+<createdBy>STEFANIA</createdBy>
+<createdTime>2021-11-05 08:53:41 UTC</createdTime>
+<ownerDesignName>ProiectBDP</ownerDesignName>
+<engineerTo>
+<item key="3661F995-F717-1EFB-EB36-A64AD3CF4E1C" value="true"/>
+</engineerTo>
+<sourcePk>5CBC9F57-05FD-0A20-A8AE-65EE1713BE22</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>un</nameOnSource>
+<nameOnTarget>prescrie</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B391B4F7-D8A7-6692-F542-89DC45F5B402</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>89C7E49D-A338-6C0A-1681-8B4B67968A46</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
